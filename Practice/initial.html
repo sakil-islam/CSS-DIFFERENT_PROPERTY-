@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+            border: 3px solid #73AD21;
+            background-color: #fff;
+            width:280px;
+            height:300px;
+            flex-wrap: wrap;
+        
+             
+
+            
+        }
+
+        div {
+            margin : 5px;
+            flex-grow: 1;
+            flex-basis: 300px;
+        }
+
+        .item-one{
+            background-color: brown;
+            width : 10px;
+            border: 5px sloid black;
+            padding : 10px;
+            height : 15px;
+            text-align: center;
+
+           
+
+        }
+        .item-two{
+            background-color: black;
+            color: white;
+             width : 12px;
+             border: 5px sloid black;
+            padding : 10px;
+            height : 15px;
+            text-align: center;
+        }
+
+        .item-three{
+             background-color: brown;
+            width : 10px;
+            border: 5px sloid black;
+            padding : 10px;
+            text-align: center;
+            height : 15px;
+        }
+
+        .item-four{
+            background-color: black;
+            color: white;
+             width : 20px;
+             border: 5px sloid black;
+            padding : 10px;
+            height : 10px;
+            text-align: center;
+        }
+        .item-five{
+            background-color: brown;
+            color: white;
+             width : 40px;
+             border: 5px sloid black;
+            padding : 10px;
+            text-align: center;
+            height : 15px;
+        }
+        .item-six{
+            background-color: black;
+            color: white;
+             width : 10px;
+             border: 5px sloid black;
+            padding : 10px;
+            height : 20px;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="item-one">1</div>
+        <div class="item-two">2</div>
+        <div class="item-three">3</div>
+        <div class="item-four">4</div>
+        <div class="item-five">5</div>
+        <div class="item-six">6</div>
+    </div>
+
+  </body>
+
+
+</html>
+
+
+<!--
+
+flex-direction : row/row-reverse; === row wise direction thakbe
+flex-direction : column/column-reverse; === column wise dirction thakbe
+
+(flex-direction : row;)
+flex-wrap:wrap/wrap-reverse; === jodi kono element box limit cross kore than wrap korle thik moto kaj kore/ reverse last corner theke suru korbethan upore uthbe flow thik rakbe
+
+(flex-direction : column;)
+flex-wrap:wrap/wrap-reverse; === jodi kono element box limit cross kore than wrap korle thik moto kaj kore/ reverse korle paser last corner theke suru korbe than upore uthbe flow thik rakbe
+
+
+(flex-direction  + flex-wrap) == flex-flow : row-reverse nowrap;
+
+(row / column wise different )
+justify-content : flex-end/flex-start/center/space-evenly/space-around/space-between; === full content box ta start point theke suru hobe flex-start hole / right side theke suru hobe na hole / center a chole asbe sob gulai / sobar modde equal space thakbe / sobar width ar baire je space chilo ta nijeder modde equal space rekhe move korece /  dobai left a hele jabe every element maje space thakbe 
+
+
+
+(row / column wise different ) row hole stretch a height default niya ney / column hole width ney 
+align-items: stretch/flex-start/flex-end/center; === default hisebe kaj kore / jodi ak ar odik line hoy tobe sobar nijer line ar align theke suru hobe / ses theke suru hobe / center theke suru hobe
+
+align-content: flex-start/flex-end/ center; === sop element akta content hisebe dore kaj korbe jodi start hoy to suru theke move korbe/ end hole nich theke move korbe/ center theke move korbe.
+
+order : 1; === by default theke markup a jemon kore present kora thake jodi chanhge korte chai tahole every element ar modde order moto value dilei hobe 0 dile suru te thakbe
+
+flex-grow: 1; === width deya thaklei container full howar ag projonto grow korbe.
+
+flex-shrink: 1; === responsive ar kaj kore by default 1 thake jodi 09 kore deya hoy ar kaj korbe na.
+
+
+min-width / flex-basis : 100px; === same kaj korle o jodi amn hoy container space kom width theke tokhon over flow hoye jabe min-width hole but flex-basis use korle overflow hobe na wrap hoye jabe.
+
+Responsive ness ar jonno flex-basis best. sathe flex-grow use korle seta extra jayga cover kore felbe.
+
+flex-grow + flex-shrink + flex-basis = flex : 1 1 100px;
+
+
+
+
+
+
+
+->
