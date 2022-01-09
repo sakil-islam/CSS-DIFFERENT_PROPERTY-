@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* .container {
+        height: 100%;
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* joto khon porjonto sop fill na korce toto khon porjonto behaviour thik ase but jokhon e sop fill hoye jabe than right side a faka jayga theke jabe si jaygay minimum pixel ar akta kore box create kore ai problem solve kore auto-fit *//*
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* auto-fit use korle display boro choto jai kora hok na keno always display full kore content rakhbe right side a faka rakhbe na atai besi use kora hobe*//*
+        grid-template-rows: repeat(2, 1fr);/*
+        grid-auto-rows: 1fr; /* ata mainly use kora hoy auto je row gula create hoy segula je akta fixed size moto thake and take jeno control kora jay seta thik kore auto rows abr chaile auto column o create kora jay  *//*
+      } */
+
+
+      /* grid ke chaile issa moto change kora jay jekono dike */
+      .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 90px); 
+        grid-template-rows: repeat(2, 90px);
+        grid-gap: 3px;
+        justify-content: center; /* ata center/space-around(sop element ar charpase equal space thake/ 2i pase equal space)/space-between(sop element ar maje equal space thake first ar last bade)/right/space-evenly(sop jaygay soman space thakbe)----> ai sign bora bor kaj kore that means row bora bor but space create kore column borabor */
+
+        align-content: center; /* ata end(dile ses a chole jabe)/center/ and upor ar sop gulo kaj kore but ata kaj kore column borabor and space dey row borabor */
+
+        justify-items: center; /* sop gula box ar modde sop element right a chole jabe nije der width o squit hoye jay cause justify-content hocce content take soray but item hocce item take soray ta extra width tar projon nai / center (ata abr center a niye asbe) same vabe ar align-item o ase */
+
+        align-items: center;  /* as like align-content ar moto kaj kore and follow kore justify-items ke */
+
+        /* justify-self: center; ata use kora hobe jokhon kono spacific element ke design korbo hobe tar jonno tokhon ar onno kono ta use korbo na*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+  </body>
+</html>

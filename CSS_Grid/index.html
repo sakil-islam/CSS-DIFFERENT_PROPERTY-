@@ -1,0 +1,49 @@
+<!-- Css-Grid------ 1) benifite is that it's helps to create multi-dimentional layout
+2) it's markup more simple other than 
+3) its more flexible and handle responsive   normal grid system means row and column
+4) grid system a akta container must lagbe / akta parent div lagbe tar modde kisu element div thakbe --> 
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: grid; /* display hobe grid */
+
+        /* grid-template-columns: 100px auto 100px; auto mane holo ata jodi display grid hoy and auto jekhane deya hobe tar age ore joto size bola hobe seta fixed kore ja baki thakbe seta auto ar jayga nibe */
+
+        /*grid-template-columns: 200px 200px;  2 ta kore column create korbe cause 2 ta valu deya ase row by default hobe jodi kisu deya na thake/ 3 ta value diye dile 3 ta kore sajabe and last porjonto joto gula row lagbe nibe */
+
+        /* grid-template-rows: 200px 300px; row fixed kore bole deya jay by default jodi besi thake tobe seta container ar size onujaye create hobe that means font ar size ja sei moto */
+
+        /* grid-template-columns: 1fr 2fr; ata puro grid ke 3ta vag hiseb kore first 1ta column dibe next ke 2 ta column dibe and ata fully responsive hobe */
+
+        /* grid-template-rows: 3fr 2fr; same as like column but ata only 2ta row nijeder 5fr dibe first ke 3ta and sceond ke 2 ta vag dibo but jodi extra aro number thake tader jonno content ar height onujai jayga kore nibe */
+
+        /* grid-template: 2fr 3fr / 1fr 2fr ; row column alada na likhe aksathe avabe lekha jay age row/ses a column */
+
+       grid-template: repeat(3, 1fr) / repeat(3, 1fr); /*  bar bar na likhe avabe function a bole deya jay je akta jinis koto bar repeat korbe repeat function ar maddome ata akta self explanetory function atay jodi row column aksathe likhte hoy tobe age row than column  */
+
+        grid-gap: 3px; /* all row and column are same gap use this */
+
+        /* grid-row-gap: 5px;
+        grid-column-gap: 10px; */ /* individual gap dite chaile */
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

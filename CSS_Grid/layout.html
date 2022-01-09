@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*
+      .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50px 1fr 50px; /* height age bole na dile ata 1fr / auto ja dei na kno se bujbe na ki dilam */ /*
+      }
+      .header { 
+        
+        /* grid-column-start: 1;
+        grid-column-end: 3; */ /* kotha theke suru hobe and kotahy giye ses hobe seta bole dite hobe *//*
+
+        grid-column: 2 / -1; /* left theke count korle 1,2,3 kore jete hobe abr right theke suru korle -1,-2,-3 avabe hobe (1 /-1) left ar 1 theke ses ba right ar -1 porjonto *//*
+      }
+      .footer {
+        grid-column: 1 / -1 ; /* avabeo lekha jay column ar jonno abr row hole ( 1 / row 2)  *//*
+      }
+      .content {
+        grid-column: 2 / -1;
+      }
+      /* jodi menu ke top theke suru korte chai *//*
+      .menu {
+        grid-row: 1 / 3;
+      } */
+
+
+      /* visually area denode korar jonno avabeo kaj korara jay */
+      .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-areas: 
+        ". h h h h h h h h h h ." /* jodi kono jayga faka rakhar dorkar hoy tokhon amr (h/.) h ar replace kore . dibo */
+        "m m m c c c c c c c c c"
+        "f f f f f f f f f f f f";
+      }
+      .header {
+        grid-area: h;
+      }
+      .footer {
+        grid-area: f;
+      }
+      .content {
+        grid-area: c;
+      }
+      .menu {
+        grid-area: m;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">HEADER</div>
+      <div class="menu">MENU</div>
+      <div class="content">CONTENT</div>
+      <div class="footer">FOOTER</div>
+    </div>
+  </body>
+</html>
