@@ -1,0 +1,46 @@
+.icons
+{
+  overflow: hidden;
+}
+.icons .icons__ul
+{
+  margin: 0;
+  padding: 0;
+}
+.icons .icons__ul .icons__list
+{
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+}
+.icons .icons__ul .icons__list .icons__list:last-child {
+  margin-right: 0;
+}
+.icons .icons__ul .icons__list .icons__link
+{
+  background-image: url('./img/icon.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #777;
+  border-radius: 50px;
+  background-position: 0 -20px;
+  transition: 2s;
+}
+
+.icons .icons__ul .icons__list:hover:nth-child(1) .icons__link
+{
+  background-position: 0 -94px;
+}
+
+.icons .icons__ul .icons__list:hover:nth-child(2) .icons__link
+{
+  background-position: -288px -94px;
+}
+
+.icons .icons__ul .icons__list:nth-child(2) .icons__link
+{
+  background-position: -286px -20px;
+}
+
