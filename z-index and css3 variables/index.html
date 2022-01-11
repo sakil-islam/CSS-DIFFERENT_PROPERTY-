@@ -1,0 +1,43 @@
+<!-- /* stack ar ordering kora hoy z-index ar maddome  order gulo control kora jay z-index ar maddome --  z-index sudu position ar sathe kaj kore z-index initial by default value 0 than positive negative value deya hoy but compare kore bole dey je ke upor thakbe jar value besi se upore thake */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index and css3 variables</title>
+  <style>
+    :root{ /* global variable select korar jonno root select kore tar modde declare korte hobe */
+      --primary-color: rgb(53, 62, 192);
+      --secondry-color: rgb(211, 108, 23);
+    }
+    div{
+      height: 250px;
+      width: 250px;
+    }
+    #div1 {
+      background-color: var(--secondry-color);
+      position: absolute;
+      z-index: 1;
+    }
+    #div2 {
+      background: var(--primary-color, green); /* fall back value add kore deya jay jodi variable some how kaj na kore */
+      position: absolute; /* jeta last a asbe absulate deyar karone setai first a asbe . stack jeta last deya hoy seta first a chole ase */
+      left: 150px;
+      top: 150px;
+      z-index: -1;
+    }
+    @media screen and (max-width: 600px) {
+      :root{
+      --primary-color:rgb(211, 108, 23);
+      --secondry-color:rgb(53, 62, 192); 
+    }
+    }
+  </style>
+</head>
+<body>
+  <div id="div1"></div>
+  <div id="div2"></div>
+</body>
+</html>
