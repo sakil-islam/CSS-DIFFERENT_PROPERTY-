@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css counter increment and counter reset tutorial</title>
+    <style type="text/css">
+        body{
+            counter-reset: my-counter;
+        }
+        h2::before{
+            content: "section " counter(my-counter,lower-roman)":";
+            counter-increment: my-counter;
+            background-color: green;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, odio?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est, corporis consectetur at temporibus labore pariatur repudiandae eaque adipisci ipsa nobis quae non libero! Quibusdam, eius mollitia nesciunt delectus placeat perspiciatis qui id fugit, deleniti molestias, nam praesentium sequi ex repellendus dicta! Nemo vitae sunt quo ullam dicta illum rerum.</p>
+    
+    <h2> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, odio?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est, corporis consectetur at temporibus labore pariatur repudiandae eaque adipisci ipsa nobis quae non libero! Quibusdam, eius mollitia nesciunt delectus placeat perspiciatis qui id fugit, deleniti molestias, nam praesentium sequi ex repellendus dicta! Nemo vitae sunt quo ullam dicta illum rerum.</p>
+    
+    <h2> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, odio?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est, corporis consectetur at temporibus labore pariatur repudiandae eaque adipisci ipsa nobis quae non libero! Quibusdam, eius mollitia nesciunt delectus placeat perspiciatis qui id fugit, deleniti molestias, nam praesentium sequi ex repellendus dicta! Nemo vitae sunt quo ullam dicta illum rerum.</p>
+    
+    <h2> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, odio?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est, corporis consectetur at temporibus labore pariatur repudiandae eaque adipisci ipsa nobis quae non libero! Quibusdam, eius mollitia nesciunt delectus placeat perspiciatis qui id fugit, deleniti molestias, nam praesentium sequi ex repellendus dicta! Nemo vitae sunt quo ullam dicta illum rerum.</p>
+    
+    <h2> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, odio?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est, corporis consectetur at temporibus labore pariatur repudiandae eaque adipisci ipsa nobis quae non libero! Quibusdam, eius mollitia nesciunt delectus placeat perspiciatis qui id fugit, deleniti molestias, nam praesentium sequi ex repellendus dicta! Nemo vitae sunt quo ullam dicta illum rerum.</p> 
+
+    <h2> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, odio?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est, corporis consectetur at temporibus labore pariatur repudiandae eaque adipisci ipsa nobis quae non libero! Quibusdam, eius mollitia nesciunt delectus placeat perspiciatis qui id fugit, deleniti molestias, nam praesentium sequi ex repellendus dicta! Nemo vitae sunt quo ullam dicta illum rerum.</p> 
+    <h2> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, odio?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est, corporis consectetur at temporibus labore pariatur repudiandae eaque adipisci ipsa nobis quae non libero! Quibusdam, eius mollitia nesciunt delectus placeat perspiciatis qui id fugit, deleniti molestias, nam praesentium sequi ex repellendus dicta! Nemo vitae sunt quo ullam dicta illum rerum.</p> 
+
+</body>
+</html>
